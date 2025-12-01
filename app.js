@@ -20,7 +20,7 @@ const cors = require('cors')
 // } 
 // app.use(cors(corsOptions))
 
-const cors = require('cors');
+// const cors = require('cors');
 app.use(cors());
 
 const route = require('./api/routes/vocabRoute')
