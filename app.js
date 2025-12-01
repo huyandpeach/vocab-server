@@ -14,11 +14,14 @@ app.use(express.json())
 
 const cors = require('cors')
 
-const corsOptions = {
-    origin: 'http://localhost:8080',
-    optionsSuccessStatus: 200
-} 
-app.use(cors(corsOptions))
+// const corsOptions = {
+//     origin: 'http://localhost:8080',
+//     optionsSuccessStatus: 200
+// } 
+// app.use(cors(corsOptions))
+
+const cors = require('cors');
+app.use(cors());
 
 const route = require('./api/routes/vocabRoute')
 route(app)
