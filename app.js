@@ -3,7 +3,8 @@ const app = express()
 
 const mongoose = require('mongoose')
 // const DATABASE_URI = 'mongodb://localhost:27017/vocab-builder'
-const DATABASE_URI = 'mongodb+srv://huyng:1234567890@mydbcluster.jyznyak.mongodb.net/'
+const DATABASE_URI = 'mongodb+srv://huyng:1234567890@mydbcluster.jyznyak.mongodb.net/vocab-builder'
+
 
 mongoose.connect(DATABASE_URI)
 .then(() => console.log('Connected to dtbase successfully !'))
